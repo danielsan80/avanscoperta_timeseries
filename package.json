@@ -1,0 +1,26 @@
+{
+  "name": "@danilo.sanchi/timeseries",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielsan80/avanscoperta_timeseries.git"
+  },
+  "author": "Danilo Sanchi, Tommaso Allevi",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/danielsan80/avanscoperta_timeseries/issues"
+  },
+  "homepage": "https://github.com/danielsan80/avanscoperta_timeseries#readme",
+  "dependencies": {
+    "mongodb": "^2.2.22",
+    "pino": "^3.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
