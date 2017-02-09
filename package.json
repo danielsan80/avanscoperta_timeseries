@@ -1,6 +1,6 @@
 {
   "name": "@danilo.sanchi/timeseries",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "url": "https://github.com/danielsan80/avanscoperta_timeseries/issues"
   },
   "homepage": "https://github.com/danielsan80/avanscoperta_timeseries#readme",
-  "dependencies": {
+  "peerDependencies": {
     "mongodb": "^2.2.22",
     "pino": "^3.4.0"
   },
