@@ -17,7 +17,11 @@ tap.beforeEach(function (done) {
   })
 })
 
-tap.test('ok', function (t) {
+tap.afterEach(function (done) {
+  db.close(done)
+})
+
+tap.test('addPoint', function (t) {
   var date = new Date()
   var type = 'smog'
   var value = 42
@@ -34,7 +38,6 @@ tap.test('ok', function (t) {
       t.equal(docs[0].type, type)
       t.equal(docs[0].value, value)
 
-      db.close()
       t.end()
     })
   })
