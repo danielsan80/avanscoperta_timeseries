@@ -26,6 +26,7 @@
     "async": "^2.1.4",
     "moment": "^2.17.1",
     "standard": "^9.0.0-beta.0",
+    "stream-array": "^1.1.2",
     "tap": "^10.1.0"
   }
 }
