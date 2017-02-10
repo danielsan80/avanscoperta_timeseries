@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run lint && npm run tap",
     "tap": "tap test/**/*.js",
-    "lint":  "standard"
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
     "pino": "^3.4.0"
   },
   "devDependencies": {
+    "async": "^2.1.4",
+    "moment": "^2.17.1",
     "standard": "^9.0.0-beta.0",
     "tap": "^10.1.0"
   }

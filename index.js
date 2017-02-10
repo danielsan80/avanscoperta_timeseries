@@ -20,6 +20,16 @@ function creator (db, logger) {
       })
     },
     fetchSerie: function fetchSerie (type, query) {
+      var collection = db.collection('timeserie.' + type)
+      var cursor = collection.find({
+        date: {
+          $gte: query.from,
+          $lte: query.to
+        },
+        type: type
+      }).sort({date: 1})
+
+      return cursor
     }
   }
 }
