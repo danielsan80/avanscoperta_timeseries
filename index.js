@@ -1,4 +1,9 @@
 'use strict'
+
+const Transform = require('stream').Transform
+
+
+
 function creator (db, logger) {
   return {
     addPoint: function addPoint (date, type, value, callback) {
@@ -29,7 +34,15 @@ function creator (db, logger) {
         type: type
       }).sort({date: 1})
 
-      return cursor
+      const t = new Transform({
+        transform: function transform(chunk, encoding, callback) {
+          this.push(data)
+          callback()
+        }
+      })
+
+
+      return cursor.pipe(t)
     }
   }
 }
